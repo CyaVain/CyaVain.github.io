@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Halaman 1</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Mengambil konten navigasi dari file navbar.html
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", "navbar.html", true);
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    // Menyisipkan konten navigasi ke dalam elemen dengan id navbar-placeholder
+                    document.getElementById("navbar-placeholder").innerHTML = xhr.responseText;
+                }
+            };
+            xhr.send();
+        });
+    </script>
+</head>
+<body>
+    <!-- Placeholder untuk navigasi -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- Konten halaman -->
+    <h1>Tentang Kami</h1>
+    <p>Kami adalah penyedia koin.</p>
+</body>
+</html>

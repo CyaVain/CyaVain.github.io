@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Daftar Nama Bank</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Mengambil konten navigasi dari file navbar.html
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", "navbar.html", true);
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    // Menyisipkan konten navigasi ke dalam elemen dengan id navbar-placeholder
+                    document.getElementById("navbar-placeholder").innerHTML = xhr.responseText;
+                }
+            };
+            xhr.send();
+        });
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        
+        ul {
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 0;
+        }
+        
+        li {
+            text-align: center;
+            width: 300px; /* Atur lebar tetap pada elemen <li> */
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-basis: calc(33.33% - 40px); /* 3 kolom dengan jarak margin 20px */
+        }
+        
+        img {
+            width: 200px;
+            height: auto;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            margin-top: 0;
+        }
+
+        .bank-details {
+            text-align: center;
+        }
+
+        .bank-details span {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+    
+    <h1>Daftar Nama Bank</h1>
+    <ul>
+        <li>
+            <img src="https://buatlogoonline.com/wp-content/uploads/2022/10/Logo-Bank-BCA-1.png" alt="Logo Bank BCA">
+            <div class="bank-details">
+                <h3>Bank BCA</h3>
+                <span>"NOMORREKENING"</span>
+                <span>a/n NAMA PEMILIK REKENING</span>
+            </div>
+        </li>
+        <li>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/BANK_BRI_logo.svg/1280px-BANK_BRI_logo.svg.png" alt="Logo Bank BRI">
+            <div class="bank-details">
+            <h3>Bank BRI</h3>
+            <span>"NOMORREKENING"</span>
+            <span>a/n NAMA PEMILIK REKENING</span>
+            </div>
+        </li>
+        <li>
+            <img src="https://upload.wikimedia.org/wikipedia/id/thumb/5/55/BNI_logo.svg/640px-BNI_logo.svg.png" alt="Logo Bank BNI">
+            <div class="bank-details">
+            <h3>Bank BNI</h3>
+            <span>"NOMORREKENING"</span>
+            <span>a/n NAMA PEMILIK REKENING</span>
+            </div>
+        </li>
+        <li>
+            <img src="https://logowik.com/content/uploads/images/permata-bank3459.jpg" alt="Logo Bank Permata">
+            <div class="bank-details">
+            <h3>Bank Permata</h3>
+            <span>"NOMORREKENING"</span>
+            <span>a/n NAMA PEMILIK REKENING</span>
+            </div>        
+        </li>
+        <li>
+            <a href="https://gopay.com"><img src="https://asset.kompas.com/crops/ZGHCMpTmxXAigLjYIA42Isbap6Y=/0x0:0x0/780x390/data/photo/2017/01/11/1631493logo-black780x390.jpg" alt="Logo Go-Pay"></a>
+            <div class="bank-details">
+            <h3>Go-Pay</h3>
+            <span>"NOMOR"</span>
+            <span>a/n NAMA PEMILIK REKENING</span>
+            </div>
+        </li>
+        <li>
+            <a href="https://ovo.com"><img src="https://i0.wp.com/swanz.id/wp-content/uploads/2020/10/OVO-Logo.jpg?ssl=1" alt="Logo OVO"></a>
+            <div class="bank-details">
+            <h3>OVO</h3>
+            <span>"NOMOR"</span>
+            <span>a/n NAMA PEMILIK REKENING</span>
+            </div>
+        </li>
+        <li>
+            <a href="https://shopeepay.com"><img src="https://1.bp.blogspot.com/-8aj5-2xrgbA/X30_86ndgPI/AAAAAAAAHPA/7LrHzutC85w5iVT_WtYYb3dmGvo5arjUwCLcBGAsYHQ/s1071/logo-shopee-pay.png" alt="Logo ShopeePay"></a>
+            <div class="bank-details">
+            <h3>ShopeePay</h3>
+            <span>"NOMOR"</span>
+            <span>a/n NAMA PEMILIK REKENING</span>
+            </div>
+        </li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,167 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+nav {
+    background-color: #ccc;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+nav li {
+    margin-right: 10px;
+    border-right: 1px solid #999;
+    padding: 5px 10px;
+}
+
+nav li:last-child {
+    border-right: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+#products-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 25px; /* Menambahkan jarak ke bawah antara setiap produk */
+    margin-right: 25px; /* Menambahkan jarak ke kanan antara produk_1 dan produk_2 */
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product h3 {
+    margin: 0;
+}
+
+.product p {
+    margin-top: 10px;
+}
+
+.chat-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    margin-top: 10px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#popup {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 400px;
+    text-align: center;
+    margin: 0 auto; /* Menengahkan popup secara horizontal */
+    box-sizing: border-box; /* Menyertakan padding dan border dalam lebar */
+}
+
+#popup h2 {
+    margin-bottom: 10px;
+}
+
+#popup input {
+    width: 100%;
+    box-sizing: border-box; /* Menyertakan padding dan border dalam lebar */
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+
+#popup button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.error-message {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 20px;
+    color: red;
+}
+.chat-button img {
+    width: 20px; /* Atur lebar sesuai kebutuhan */
+    height: auto; /* Biarkan tinggi mengikuti proporsi asli gambar */
+    vertical-align: middle; /* Pusatkan gambar secara vertikal */
+    margin-right: 5px; /* Atur jarak antara gambar dan teks */
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px; /* Tambahkan margin di atas tombol */
+    box-sizing: border-box; /* Menyertakan padding dan border dalam lebar */
+}
+
+.button-container button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+    flex-grow: 1;
+    box-sizing: border-box; /* Menyertakan padding dan border dalam lebar */
+}
+
+.button-container #cancel-button {
+    background-color: #FF3333;
+    margin-right: 10px; /* Tambahkan margin kanan ke tombol Batal */

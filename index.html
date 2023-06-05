@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Beli Chip</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Mengambil konten navigasi dari file navbar.html
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", "navbar.html", true);
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    // Menyisipkan konten navigasi ke dalam elemen dengan id navbar-placeholder
+                    document.getElementById("navbar-placeholder").innerHTML = xhr.responseText;
+                }
+            };
+            xhr.send();
+        });
+    </script>
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+
+    <h1>Website E-commerce</h1>
+    <div id="products-container">
+        <div class="product">
+            <div class="product_1"></div>
+            <img src="https://blog-media.lifepal.co.id/app/uploads/sites/3/2020/05/04154725/investasi-koin-emas.jpg" alt="Gambar Produk 1">
+            <h3>Chip 20M</h3>
+            <p>Rp 100.000</p>
+            <button class="chat-button" onclick="openPopup('Chip 20M', 'Rp 100.000')"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/2044px-WhatsApp.svg.png" alt="WhatsApp Icon">Chat Sekarang</button>
+        </div>
+        <div class="product">
+            <div class="product_2"></div>
+            <img src="https://blog-media.lifepal.co.id/app/uploads/sites/3/2020/05/04154725/investasi-koin-emas.jpg" alt="Gambar Produk 2">
+            <h3>Chip 50M</h3>
+            <p>Rp 200.000</p>
+            <button class="chat-button" onclick="openPopup('Chip 50M', 'Rp 200.000')"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/2044px-WhatsApp.svg.png" alt="WhatsApp Icon">Chat Sekarang</button>
+        </div>
+    </div>
+
+    <div id="popup-container">
+        <div id="popup">
+            <h2>Masukkan Nama Anda</h2>
+            <input type="text" id="nama-input" placeholder="Nama Anda">
+            <div class="button-container">
+                <button id="cancel-button">Batal</button>
+                <button id="submit-button">Kirim</button>
+            </div>
+        </div>
+    </div>
+    
+
+    <script>
+    function openPopup(namaProduk, hargaProduk) {
+        document.getElementById('popup-container').style.display = 'flex';
+        document.getElementById('nama-input').value = '';
+        document.getElementById('submit-button').onclick = function() {
+            var namaPengguna = document.getElementById('nama-input').value;
+            redirectToWhatsApp(namaPengguna, namaProduk, hargaProduk);
+        };
+        document.getElementById('cancel-button').onclick = function() {
+            closePopup();
+        };
+    }
+
+    function closePopup() {
+        document.getElementById('popup-container').style.display = 'none';
+    }
+
+        function redirectToWhatsApp(namaPengguna, namaProduk, hargaProduk) {
+            var nomorTelepon = '6282310269446'; // Ganti dengan nomor telepon tujuan
+            var pesan = 'Halo, nama saya ' + namaPengguna + '. Saya ingin membeli ' + namaProduk + ' seharga ' + hargaProduk + '.';
+            var url = 'https://api.whatsapp.com/send?phone=' + nomorTelepon + '&text=' + encodeURIComponent(pesan);
+            window.open(url);
+        }
+    </script>
+</body>
+</html>
