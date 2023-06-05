@@ -3,14 +3,65 @@ body {
     margin: 0;
     padding: 0;
 }
+#teks-chip-ungu {
+    background-color: #6f42c1; /* Warna latar belakang */
+    padding: 20px; /* Ruang dalam di sekitar teks */
+    color: white; /* Warna teks */
+    text-align: center; /* Pusatkan teks secara horizontal */
+  }
+  
+#teks-chip-ungu h2 {
+    font-size: 24px; /* Ukuran font untuk judul h2 */
+    margin-bottom: 10px; /* Ruang bawah antara judul dan teks berikutnya */
+  }
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    max-height: 400px; /* Ukuran maksimum tinggi gambar pada desktop */
+  }
+
+@media (max-width: 767px) {
+    .product img {
+      max-width: 100%;
+      height: auto;
+      max-height: 200px; /* Ukuran maksimum tinggi gambar pada ponsel */
+    }
+  }
+
+#teks-chip-kuning {
+    text-align: center;
+    background-color: #ffd700;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#teks-chip-kuning h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#teks-chip-kuning p {
+    font-size: 16px;
+    color: #666;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
 
 h1 {
+    text-align: center;
+}
+
+h2 {
     text-align: center;
 }
 
 nav {
     background-color: #ccc;
     padding: 10px;
+
 }
 
 nav ul {
@@ -52,6 +103,7 @@ nav a {
     text-align: center;
     margin-bottom: 25px; /* Menambahkan jarak ke bawah antara setiap produk */
     margin-right: 25px; /* Menambahkan jarak ke kanan antara produk_1 dan produk_2 */
+    background-color: #fff;
 }
 
 .product img {
@@ -62,10 +114,14 @@ nav a {
 
 .product h3 {
     margin: 0;
+    color: #000000;
+    font-size: 50px;
 }
 
-.product p {
+#products-container p {
     margin-top: 10px;
+    color: #000000;
+    font-size: 40px;
 }
 
 .chat-button {
@@ -81,6 +137,14 @@ nav a {
     align-items: center;
     justify-content: center;
     width: 100%;
+    font-size: 25px;
+}
+
+.chat-button img {
+    width: 5%; /* Atur lebar sesuai kebutuhan */
+    height: auto; /* Biarkan tinggi mengikuti proporsi asli gambar */
+    vertical-align: middle; /* Pusatkan gambar secara vertikal */
+    margin-right: 5px; /* Atur jarak antara gambar dan teks */
 }
 
 #popup-container {
@@ -134,12 +198,6 @@ nav a {
     font-size: 20px;
     color: red;
 }
-.chat-button img {
-    width: 20px; /* Atur lebar sesuai kebutuhan */
-    height: auto; /* Biarkan tinggi mengikuti proporsi asli gambar */
-    vertical-align: middle; /* Pusatkan gambar secara vertikal */
-    margin-right: 5px; /* Atur jarak antara gambar dan teks */
-}
 
 .button-container {
     display: flex;
@@ -164,3 +222,4 @@ nav a {
 .button-container #cancel-button {
     background-color: #FF3333;
     margin-right: 10px; /* Tambahkan margin kanan ke tombol Batal */
+}

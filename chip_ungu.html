@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Djakarta_Koin</title>
+    <link rel="stylesheet" type="text/css" href="navbar-style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Mengambil konten navigasi dari file navbar.html
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", "navbar.html", true);
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    // Menyisipkan konten navigasi ke dalam elemen dengan id navbar-placeholder
+                    document.getElementById("navbar-placeholder").innerHTML = xhr.responseText;
+                }
+            };
+            xhr.send();
+        });
+    </script>
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+    <div id="welcome-title">
+    <h1>Welcome to Djakarta_Koin (Dja_Ko)</h1>
+    <br>
+    <h1> Open Hours 07.00 - 03.00 WIB</h1>
+    </div>  
+
+    <div id="teks-chip-ungu">
+        <h2>Chip Ungu / MD</h2>
+        <div id="Chip_Ungu_Products">
+        <div id="products-container">
+            <div class="product">
+                <img alt="Gambar Produk MD 1">
+                <h3>Chip 400M MD</h3>
+                <p>Rp 37.000</p>
+                <button class="chat-button" onclick="openPopup(this.parentElement.querySelector('h3').textContent, this.parentElement.querySelector('p').textContent)"><img  alt="WhatsApp Icon">Chat Sekarang</button>
+            </div>
+            <div class="product">
+                <img alt="Gambar Produk MD 2">
+                <h3>Chip 1B MD</h3>
+                <p>Rp 68.000</p>
+                <button class="chat-button" onclick="openPopup(this.parentElement.querySelector('h3').textContent, this.parentElement.querySelector('p').textContent)"><img  alt="WhatsApp Icon">Chat Sekarang</button>
+            </div>
+            <div class="product">
+                <img alt="Gambar Produk MD 3">
+                <h3>Chip 2B MD</h3>
+                <p>Rp 136.000</p>
+                <button class="chat-button" onclick="openPopup(this.parentElement.querySelector('h3').textContent, this.parentElement.querySelector('p').textContent)"><img  alt="WhatsApp Icon">Chat Sekarang</button>
+            </div>
+            <div class="product">
+                <img alt="Gambar Produk MD 4">
+                <h3>Chip 2B MD (1 INBOX)</h3>
+                <p>Rp 137.000</p>
+                <button class="chat-button" onclick="openPopup(this.parentElement.querySelector('h3').textContent, this.parentElement.querySelector('p').textContent)"><img  alt="WhatsApp Icon">Chat Sekarang</button>
+            </div>
+    </div>
+    </div>
+    </div>
+
+
+    <div id="teks-chip-kuning">
+    <h2>Chip Kuning</h2>
+    <p style="color: #666;"><strong>Dapatkan Bonus 100M JIKA TOTAL PEMBELIAN 10B DALAM 1 BULAN</strong></p>
+    <p style="color: #666;"><strong>KHUSUS UNTUK CHIP KUNING SAJA</strong></p>
+    
+    <div id="Chip_Kuning">
+    <div id="products-container">
+        <div class="product">
+            <img alt="Gambar Produk 1">
+            <h3>Chip 100M</h3>
+            <p>Rp 7.000</p>
+            <button class="chat-button" onclick="openPopup(this.parentElement.querySelector('h3').textContent, this.parentElement.querySelector('p').textContent)"><img alt="WhatsApp Icon">Chat Sekarang</button>
+        </div>
+        
+        <div class="product">
+             <img alt="Gambar Produk 2">
+            <h3>Chip 200M</h3>
+            <p>Rp 14.000</p>
+            <button class="chat-button" onclick="openPopup(this.parentElement.querySelector('h3').textContent, this.parentElement.querySelector('p').textContent)"><img  alt="WhatsApp Icon">Chat Sekarang</button>
+        </div>
+        <div class="product">
+            <img  alt="Gambar Produk 3">
+            <h3>Chip 300M</h3>
+            <p>Rp 21.000</p>
+            <button class="chat-button" onclick="openPopup(this.parentElement.querySelector('h3').textContent, this.parentElement.querySelector('p').textContent)"><img  alt="WhatsApp Icon">Chat Sekarang</button>
+        </div>
+        
+        
+        <div class="product">
+            <img  alt="Gambar Produk 4">
+            <h3>Chip 400M</h3>
+            <p>Rp 28.000</p>
+            <button class="chat-button" onclick="openPopup(this.parentElement.querySelector('h3').textContent, this.parentElement.querySelector('p').textContent)"><img  alt="WhatsApp Icon">Chat Sekarang</button>
+        </div>
+        <div class="product">
+            <img  alt="Gambar Produk 4">
+            <h3>Chip 500M</h3>
+            <p>Rp 33.000</p>
+            <button class="chat-button" onclick="openPopup(this.parentElement.querySelector('h3').textContent, this.parentElement.querySelector('p').textContent)"><img  alt="WhatsApp Icon">Chat Sekarang</button>
+        </div>
+        
+        <div class="product">
+            <img  alt="Gambar Produk 5">
+            <h3>Chip 600M</h3>
+            <p>Rp 40.000</p>
+            <button class="chat-button" onclick="openPopup(this.parentElement.querySelector('h3').textContent, this.parentElement.querySelector('p').textContent)"><img  alt="WhatsApp Icon">Chat Sekarang</button>
+        </div>
+        <div class="product">
+            <img  alt="Gambar Produk 6">
+            <h3>Chip 700M</h3>
+            <p>Rp 47.000</p>
+            <button class="chat-button" onclick="openPopup(this.parentElement.querySelector('h3').textContent, this.parentElement.querySelector('p').textContent)"><img  alt="WhatsApp Icon">Chat Sekarang</button>
+        </div>
+        
+        <div class="product">
+            <img  alt="Gambar Produk 7">
+            <h3>Chip 800M</h3>
+            <p>Rp 54.000</p>
+            <button class="chat-button" onclick="openPopup(this.parentElement.querySelector('h3').textContent, this.parentElement.querySelector('p').textContent)"><img  alt="WhatsApp Icon">Chat Sekarang</button>
+        </div>
+        <div class="product">
+            <img  alt="Gambar Produk 8">
+            <h3>Chip 1B</h3>
+            <p>Rp 63.000</p>
+            <button class="chat-button" onclick="openPopup(this.parentElement.querySelector('h3').textContent, this.parentElement.querySelector('p').textContent)"><img  alt="WhatsApp Icon">Chat Sekarang</button>
+        </div>
+        
+        <div class="product">
+            <img  alt="Gambar Produk 9">
+            <h3>Chip 1B 500M</h3>
+            <p>Rp 96.000</p>
+            <button class="chat-button" onclick="openPopup(this.parentElement.querySelector('h3').textContent, this.parentElement.querySelector('p').textContent)"><img  alt="WhatsApp Icon">Chat Sekarang</button>
+        </div>
+        <div class="product">
+            <img  alt="Gambar Produk 10">
+            <h3>Chip 10B</h3>
+            <p>Rp 630.000</p>
+            <button class="chat-button" onclick="openPopup(this.parentElement.querySelector('h3').textContent, this.parentElement.querySelector('p').textContent)"><img  alt="WhatsApp Icon">Chat Sekarang</button>
+        </div>
+    </div>
+</div>
+</div>
+
+    <div id="popup-container">
+        <div id="popup">
+            <h2>Masukkan ID dan Nick Anda</h2>
+            <input type="text" id="id-user" placeholder="Nama Anda">
+            <input type="text" id="nick-user" placeholder="Nick Anda">
+            <div class="button-container">
+                <button id="cancel-button">Batal</button>
+                <button id="submit-button">Kirim</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+    <script>
+    var images = document.querySelectorAll('#Chip_Kuning .product img');
+    for (var i = 0; i < images.length; i++) {
+    images[i].src = 'https://blog-media.lifepal.co.id/app/uploads/sites/3/2020/05/04154725/investasi-koin-emas.jpg';
+    }
+    var gmb = document.querySelectorAll('#Chip_Ungu_Products .product img');
+    for (var i = 0; i < gmb.length; i++) {
+    gmb[i].src = 'https://media.istockphoto.com/id/177772362/photo/small-stack-of-purple-poker-chips.jpg?s=612x612&w=0&k=20&c=J5ijYLBQBwup5yX35na0JE7MXd0bce0F26OKSI5jCAM=';
+    }
+    var buttons = document.querySelectorAll('#Chip_Kuning .chat-button');
+    for (var i = 0; i < buttons.length; i++) {
+    var img = buttons[i].querySelector('img');
+    img.setAttribute('src', "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/2044px-WhatsApp.svg.png");
+    }
+    var btn = document.querySelectorAll('#Chip_Ungu_Products .chat-button');
+    for (var i = 0; i < btn.length; i++) {
+    var img = btn[i].querySelector('img');
+    img.setAttribute('src', "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/2044px-WhatsApp.svg.png");
+    }
+    function openPopup(namaProduk, hargaProduk) {
+        document.getElementById('popup-container').style.display = 'flex';
+        document.getElementById('id-user').value = '';
+        document.getElementById('nick-user').value = '';
+        document.getElementById('submit-button').onclick = function() {
+            var namaPengguna = document.getElementById('id-user').value;
+            var nickPengguna = document.getElementById('nick-user').value;
+            redirectToWhatsApp(namaPengguna, namaPengguna, namaProduk, hargaProduk);
+        };
+        document.getElementById('cancel-button').onclick = function() {
+            closePopup();
+        };
+    }
+
+    function closePopup() {
+        document.getElementById('popup-container').style.display = 'none';
+    }
+
+        function redirectToWhatsApp(namaPengguna, nickPengguna , namaProduk, hargaProduk) {
+            var nomorTelepon = '6282310269446'; // Ganti dengan nomor telepon tujuan
+            var pesan = 'Halo, nama saya ' + namaPengguna + ',\n Nick : ' + nickPengguna + '.\n Saya ingin membeli ' + namaProduk + ' seharga ' + hargaProduk + '.';
+            var url = 'https://api.whatsapp.com/send?phone=' + nomorTelepon + '&text=' + encodeURIComponent(pesan);
+            window.open(url);
+        }
+    </script>
+</body>
+</html>

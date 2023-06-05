@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Daftar Nama Bank</title>
+    <title>Pembayaran</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="navbar-style.css">
     <script>
@@ -27,8 +27,12 @@
         
         h1 {
             text-align: center;
+            font-size: 75px;
         }
-        
+        h2 {
+            text-align: left;
+            font-size: 60px;            
+        }
         ul {
             list-style-type: none;
             display: flex;
@@ -63,15 +67,22 @@
             text-align: center;
         }
 
+        .bank-details h3{
+            font-size: 50px;
+        }
+
         .bank-details span {
             display: block;
+            font-size: 25px;
         }
     </style>
 </head>
 <body>
     <div id="navbar-placeholder"></div>
     
-    <h1>Daftar Nama Bank</h1>
+    <h1>Daftar Metode Pembayaran</h1>
+    <br>
+    <h2>Rekening Bank</h2>
     <ul id="ListRekening">
         <li>
             <img src="https://buatlogoonline.com/wp-content/uploads/2022/10/Logo-Bank-BCA-1.png" alt="Logo Bank BCA">
@@ -98,17 +109,37 @@
             </div>
         </li>
         <li>
-            <img src="https://logowik.com/content/uploads/images/permata-bank3459.jpg" alt="Logo Bank Permata">
+            <img src="https://logos-download.com/wp-content/uploads/2016/06/Mandiri_logo.png" alt="Logo Bank Permata">
             <div class="bank-details">
-            <h3>Bank Permata</h3>
+            <h3>Bank Mandiri</h3>
             <span>"NOMORREKENING"</span>
             <span>a/n NAMA PEMILIK REKENING</span>
             </div>        
         </li>
+        </ul>
+        <h2>Dompet Digital</h2>
+        <ul id="ListRekening">
+        <li>
+            <a href="https://www.linkaja.id/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/LinkAja.svg/2048px-LinkAja.svg.png" alt="Logo Go-Pay"></a>
+            <div class="bank-details">
+            <h3>LinkAja</h3>
+            <span>"NOMOR"</span>
+            <span>a/n NAMA PEMILIK REKENING</span>
+            </div>
+        </li>   
+        <li>
+            <a href="https://www.dana.id/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Logo_dana_blue.svg/2560px-Logo_dana_blue.svg.png" alt="Logo Go-Pay"></a>
+            <div class="bank-details">
+            <h3>DANA</h3>
+            <span>"NOMOR"</span>
+            <span>a/n NAMA PEMILIK REKENING</span>
+            </div>
+        </li>         
+
         <li>
             <a href="https://gopay.com"><img src="https://asset.kompas.com/crops/ZGHCMpTmxXAigLjYIA42Isbap6Y=/0x0:0x0/780x390/data/photo/2017/01/11/1631493logo-black780x390.jpg" alt="Logo Go-Pay"></a>
             <div class="bank-details">
-            <h3>Go-Pay</h3>
+            <h3>GoPay</h3>
             <span>"NOMOR"</span>
             <span>a/n NAMA PEMILIK REKENING</span>
             </div>
